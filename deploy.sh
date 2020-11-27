@@ -222,7 +222,7 @@ commit+push() {
   if [ $GH_TOKEN ]; then
     # deploy by Travis CI
     # add github token
-    repo="https://"$GH_TOKEN"@github.com/alphaex-api/openapi.git"
+    repo="https://"$GH_TOKEN"@github.com/xu/openapi.git"
     git remote add origin-pages $repo
     git push --quiet origin-pages $deploy_branch
   else
